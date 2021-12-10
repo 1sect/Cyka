@@ -1,0 +1,131 @@
+*{margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+.head{
+    justify-content: space-between;
+    width: 100%;
+    
+}
+h1{
+    font-size: 55px;
+}
+
+.nav1{
+    
+    
+    line-height: 82px;
+    justify-content: space-around;
+    font-size:clamp(20px,4vw,40px);
+     
+}
+.nav2{
+      margin-left: 15px;
+      font-size:20px;
+      line-height: 59px;   
+      color: #939393;
+      text-align: left;
+      
+      
+      
+}
+.sweat{
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 15px;
+    
+}
+.prix{
+    color: #DA0000;
+    font-weight: 400;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+button{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 94px;    
+    border: none;
+    margin-right: 30px;
+}
+.livraison{
+    background-color: green;
+    color: white;
+    text-align: center;
+
+}
+
+p img{
+    width: 300px;
+}
+
+.blocn{
+    background: black;
+}
+.textb{
+    color: white;
+    justify-content: space-around;
+}
+.less{
+    margin-top: 30px;
+    margin-left: 15px;
+    
+}
+
+.barre{
+    width: auto;
+}
+.taille{
+    width: 90%;
+    
+}
+.bt{
+    width: 300px;
+    margin-top: 50px;
+}
+.bt:hover{
+    background-color: red;
+    font-size: white;
+    border: red 5px solid;
+}
+.parent{
+    width: 90%;
+    font-size: 40px;
+    
+}
+
+
+@media(max-width:1200px){
+    p img{
+        width: 100%;
+    }
+    .taille{
+        width: 100%;
+    }
+    .parent{
+        margin-left: 5px;
+    }
+    .Sweat{
+        font-size: 30px;
+    }
+    .parent{
+        font-size: 20px;
+    }
+}
+    
