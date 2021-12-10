@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="catégories.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catégories.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- Titre -->
+    <span class="disp">
+        <nav class="navbar light-mode show-nav" role="navigation">
+            <ul class="navbarlinks">
+                <li class="navbarlink" first><a href="#">Nouveautés</a></li>
+                <li class="navbarlink" second><a href="#">Homme</a></li>
+                <li class="navbarlink" third><a href="#">Femme</a></li>
+                <li class="navbarlink" four><a href="#">Chaussures</a></li>
+                <li class="navbarlink" fifth><a href="#">Accesoires</a></li>
+                <li class="navbarlink" fifth><a href="#"><img src="image-terry/icone.png" alt=""></a></li>
+                <li class="navbarlink" fifth><a href="#"><img src="image-terry/panier.png" alt=""></a></li>
+            </ul>
+                <span class="bar"></span>
+            </nav>
+    </span>
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">C y k a</a>
+    
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">Nouveautés</a>
+        <a href="#contact">Homme</a>
+        <a href="#about">Femme</a>
+        <a href="#about">Chaussures</a>
+        <a href="#about">Accessoire</a>
+        <a href="#about"><img src="image-terry/icone.png" alt=""></a>
+        <a href="#about"><img src="image-terry/panier.png" alt=""></a>
+      </div>
+    
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    </header>
+    <!-- Image de tete -->
+    <section class="tete">
+        <div class="cyka">Cyka.</div> </section>
+
+        <section class="tetee">
+            <div class="cykaa">Cyka.</div> </section>
+
+    <!-- 3 carrés -->
+
+<section class="box">
+
+    <div class="mvs1">
+        <div class="mvs">Manteaux  </div>
+        <div class="mvs"> Veste  </div>
+        <div class="mvs">  Sweat </div>
+    </div>
+    
+    <div>
+        <img class="mvsimg" src="image-terry/Manteaux.png" alt="">
+        <img class="mvsimg" src="image-terry/Veste.png" alt=""> 
+        <img class="mvsimg" src="image-terry/Sweat.png" alt="">
+    </div>
+
+</section>
+
+    <!-- 2 carrés -->
+   
+    <section class="rect">
+
+            <div class="carré nouvautés">Nouveautés</div>
+            <div class="carré paire">Paire Tendance</div>
+    </section>    
+ 
+
+    <!-- 3 carrés -->
+
+<section class="box">
+
+    <div class="mvs1">
+        <div class="mvs">Pantalon</div>
+        <div class="mvs">Chaussure</div>
+    </div>
+
+       
+            <div class="fin">
+                <img class="mvsimg" src="image-terry/Pantalon.png" alt="">
+                <img class="mvsimg" src="image-terry/Chaussure.png" alt="">
+            </div>
+        
+    </div>
+
+</section>
+
+<footer>
+
+<section class="info">
+    <div>
+        <ul>
+            <li>S'INSCRIRE AUX E-MAILS</li>
+            <li>RÉDUCTION POUR ÉTUDIANTS</li>
+            <li>COMMENTAIRES</li>
+        </ul>
+    </div> 
+    <div>
+        <ul>
+            <li>AIDE</li>
+            <li>Statut de commande</li>
+            <li>Expédition et livraison</li>
+            <li>Retours</li>
+            <li>Modes de paiement</li>
+            <li>Nous contacter</li>
+            <li>Aide - Codes promo</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>À PROPOS</li>
+            <li>Actualités</li>
+            <li>Carrières</li>
+            <li>Investisseurs</li>
+            <li>Développement durable</li>
+        </ul>
+    </div>
+</section>
+</footer>
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+<script>
+    gsap.to("titre-gauche",{y: -50, opacity: 3, ease: "elastic.out(1,03)"});
+    gsap.to("p", {duration: 1.8, y: -50, opacity: 3, ease: "back.out(1.7)"});
+    gsap.to("btn", {duration: 1.8, y: -50, opacity: 3});
+    gsap.to("img", {y: -10, opacity: 3, duration: 1.8, ease: "elastic.out(1, 0.3)"});
+
+    var tl = gsap.timeline({default: {duration: 1.8, opacity: 3}});
+
+    tl.to ("titre-gauche", {y:-50, ease: "elastic.out(1, 0.3)"})
+    .to("p", {y: -50, ease: "back.out(1.7)"})
+    .to(".btn", {y: -50})
+    .to("img", {y: -10, ease: "elastic.out(1, 0.3)"});
+</script>
+
+</body>
+</html>
